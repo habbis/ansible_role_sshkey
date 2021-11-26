@@ -1,0 +1,4 @@
+---
+# variables
+# set it to your github/gitlab or git-gui
+git-gui: https://github.com/habbis.keys

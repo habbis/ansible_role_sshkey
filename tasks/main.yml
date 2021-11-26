@@ -1,0 +1,10 @@
+---
+# tasks
+- name: get ssh key from github/gitlab or other git-gui
+  ansible.posix.authorized_key:
+    user: "{{ item }}"
+    key: "{{ git-gui}}"
+    validate_cert: True
+    state: present
+  loop:
+    - root
